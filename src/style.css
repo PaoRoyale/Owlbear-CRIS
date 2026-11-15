@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{font:13px Inter,system-ui,sans-serif;background:transparent;color:#eaf0f5}
+#app{position:absolute;inset:0;display:flex;flex-direction:column;min-width:320px;min-height:220px;background:#10151c;border:1px solid #465465;border-radius:10px;overflow:hidden;box-shadow:0 12px 40px #0009}
+#window-bar{height:42px;flex:0 0 42px;display:flex;align-items:center;justify-content:space-between;padding:0 10px 0 14px;background:linear-gradient(90deg,#182532,#111820);border-bottom:1px solid #354555;cursor:move;user-select:none}
+.brand{display:flex;align-items:center;gap:8px;letter-spacing:.08em}.brand strong{font-size:14px}.brand small{color:#8ea2b5;font-size:9px;letter-spacing:.13em}
+.dot{width:8px;height:8px;border-radius:50%;background:#54d6c7;box-shadow:0 0 9px #54d6c7}
+.actions{display:flex;gap:5px}button{width:28px;height:26px;border:1px solid #405161;border-radius:5px;color:#dce7ef;background:#202d39;cursor:pointer}button:hover,button[aria-pressed=true]{background:#315064;border-color:#66c6c1}
+#content{position:relative;flex:1;min-height:0;background:#fff}#cris-frame{display:block;width:100%;height:100%;border:0;background:#fff}
+#status{position:absolute;inset:0;z-index:2;display:grid;place-items:center;padding:20px;text-align:center;color:#dbe7ef;background:#101820}#status[hidden]{display:none}
+footer{height:24px;flex:0 0 24px;display:flex;justify-content:space-between;align-items:center;padding:0 10px;color:#8da0b2;background:#111a23;font-size:9px}footer span:first-child{color:#66d6c6;font-weight:700}
+#resize-handle{position:absolute;width:17px;height:17px;right:0;bottom:0;cursor:nwse-resize;background:linear-gradient(135deg,transparent 45%,#7792a8 46%,#7792a8 53%,transparent 54%,transparent 66%,#7792a8 67%,#7792a8 74%,transparent 75%)}
+#app.minimized{height:42px!important}#app.minimized #content,#app.minimized footer,#app.minimized #resize-handle{display:none}
+#app.expanded{inset:0!important;width:100%!important;height:100%!important}
+#app.pinned{z-index:2147483000}
