@@ -1,0 +1,15 @@
+{
+  "name": "C.R.I.S. - Ordem Paranormal",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "description": "Abre o C.R.I.S. em uma janela pessoal dentro do Owlbear Rodeo, com controles de posição, tamanho e PIN.",
+  "author": "Personalizado",
+  "icon": "https://SEU-USUARIO.github.io/SEU-REPOSITORIO/icon.svg",
+  "action": {
+    "title": "C.R.I.S.",
+    "icon": "https://SEU-USUARIO.github.io/SEU-REPOSITORIO/icon.svg",
+    "popover": "https://SEU-USUARIO.github.io/SEU-REPOSITORIO/index.html",
+    "width": 900,
+    "height": 700
+  }
+}

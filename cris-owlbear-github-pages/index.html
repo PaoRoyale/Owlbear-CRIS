@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>C.R.I.S. — Owlbear Rodeo</title>
+</head>
+<body>
+  <main id="app">
+    <header id="window-bar">
+      <div class="brand"><span class="dot"></span><strong>C.R.I.S.</strong><small>ORDEM PARANORMAL</small></div>
+      <nav class="actions">
+        <button id="pin" title="Fixar janela" aria-pressed="false">📌</button>
+        <button id="minimize" title="Minimizar">—</button>
+        <button id="maximize" title="Expandir/recolher">□</button>
+      </nav>
+    </header>
+    <section id="content">
+      <div id="status">Tentando carregar o C.R.I.S.…</div>
+      <iframe id="cris-frame" src="https://crisordemparanormal.com/" title="C.R.I.S. — Ficha de RPG" allow="clipboard-read; clipboard-write"></iframe>
+    </section>
+    <footer><span>PRIVADO · SOMENTE NESTA TELA</span><span>Arraste pelo cabeçalho · Redimensione pelo canto</span></footer>
+    <div id="resize-handle" title="Redimensionar"></div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
